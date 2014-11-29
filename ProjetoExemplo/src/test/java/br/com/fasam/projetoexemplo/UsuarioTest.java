@@ -1,20 +1,20 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package br.com.fasam.projetoexemplo;
 
-import br.fasam.projetoexemplo.entidades.Artigo;
 import br.fasam.projetoexemplo.entidades.Usuario;
 import junit.framework.TestCase;
 
 /**
  *
- * @author Aluno
+ * @author Raphael
  */
-public class ArtigoTest extends TestCase {
+public class UsuarioTest extends TestCase {
     
-    public ArtigoTest(String testName) {
+    public UsuarioTest(String testName) {
         super(testName);
     }
     
@@ -27,9 +27,9 @@ public class ArtigoTest extends TestCase {
     protected void tearDown() throws Exception {
         super.tearDown();
     }
-    
-    public void testUsuarioEmArtigo() {
-        Artigo artigo = new Artigo(new Usuario("nome usuario","email","senha"));
-        assertNotNull(artigo.getUsuario());
+
+    public void testNomeDoUsuarioInformado(){
+        Usuario usuario = new Usuario("raphael","email@dominio.com","senha123");
+        assertNotNull(usuario.getNome());
     }
 }
