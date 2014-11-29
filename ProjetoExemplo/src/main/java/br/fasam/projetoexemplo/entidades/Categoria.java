@@ -37,7 +37,7 @@ public class Categoria {
     }
 
     /**
-     * @param descricao the descricao to set
+     * @param descricao the descricao to set 
      */
     public void setDescricao(String descricao) {
         this.descricao = descricao;
