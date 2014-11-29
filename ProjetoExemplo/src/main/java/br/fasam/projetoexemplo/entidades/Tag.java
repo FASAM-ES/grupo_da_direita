@@ -8,17 +8,16 @@ package br.fasam.projetoexemplo.entidades;
  *
  * @author Aluno
  */
-public class Artigo {
-    
-    private String Titulo;
+public class Tag {
+    private String Nome;
     private String Descricao;
 
-    public String getTitulo() {
-        return Titulo;
+    public String getNome() {
+        return Nome;
     }
 
-    public void setTitulo(String Titulo) {
-        this.Titulo = Titulo;
+    public void setNome(String Nome) {
+        this.Nome = Nome;
     }
 
     public String getDescricao() {
@@ -27,5 +26,6 @@ public class Artigo {
 
     public void setDescricao(String Descricao) {
         this.Descricao = Descricao;
-    } 
+    }
+    
 }
