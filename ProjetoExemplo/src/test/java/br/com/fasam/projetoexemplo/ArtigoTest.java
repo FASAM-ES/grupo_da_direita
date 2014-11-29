@@ -29,7 +29,7 @@ public class ArtigoTest extends TestCase {
     }
     
     public void testUsuarioEmArtigo() {
-        Artigo artigo = new Artigo(new Usuario());
+        Artigo artigo = new Artigo(new Usuario("nome usuario","email","senha"));
         assertNotNull(artigo.getUsuario());
     }
 }
