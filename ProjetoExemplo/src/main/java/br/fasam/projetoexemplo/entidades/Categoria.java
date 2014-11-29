@@ -34,7 +34,7 @@ public class Categoria {
      */
     public String getDescricao() {
         return descricao;
-    } 
+    }
 
     /**
      * @param descricao the descricao to set
