@@ -6,6 +6,7 @@
 package br.com.fasam.projetoexemplo;
 
 import br.fasam.projetoexemplo.entidades.Comentario;
+import br.fasam.projetoexemplo.entidades.Usuario;
 import junit.framework.TestCase;
 
 /**
@@ -29,12 +30,14 @@ public class ComentarioTest extends TestCase {
     }
     
     public void testTituloEmComentario() {
-        Comentario comentario = new Comentario("titulo");
+        Usuario usuario = new Usuario("nome", "e-mail", "senha");
+        Comentario comentario = new Comentario("titulo", usuario);
         assertNotNull(comentario.getTitulo());
     }
     
     public void testDescricaoEmComentario() {
-        Comentario comentario = new Comentario("titulo");
+        Usuario usuario = new Usuario("nome", "e-mail", "senha");
+        Comentario comentario = new Comentario("titulo", usuario);
         comentario.setDescricao("descricao do comentario");
         assertNotNull(comentario.getDescricao());
     }

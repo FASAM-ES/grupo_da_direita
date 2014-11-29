@@ -15,8 +15,9 @@ public class Comentario {
     Usuario usuario;
     Artigo artigo;
 
-    public Comentario (String titulo){
+    public Comentario (String titulo, Usuario usuario){
         this.titulo = titulo;
+        this.usuario = usuario;
     }
     
     public String getTitulo() {
@@ -34,7 +35,7 @@ public class Comentario {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
+    
     public Usuario getUsuario() {
         return usuario;
     }
