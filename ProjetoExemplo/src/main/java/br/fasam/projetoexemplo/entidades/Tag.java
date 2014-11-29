@@ -11,7 +11,8 @@ import java.util.List;
  *
  * @author Aluno
  */
-public class Tag {
+public class Tag {   
+    
     String nome;
     String descricao;
     List<Artigo> artigos;
