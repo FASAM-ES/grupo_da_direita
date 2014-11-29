@@ -11,13 +11,15 @@ import java.util.List;
  *
  * @author Aluno
  */
-public class Tag {
+public class Tag {   
+    
     String nome;
     String descricao;
     List<Artigo> artigos;
     
     public Artigo getArtigo(Integer i) {
         return artigos.get(i);
+        
     }
     
     public void addArtigo(Artigo artigo){
