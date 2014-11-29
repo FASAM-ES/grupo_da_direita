@@ -7,7 +7,7 @@ package br.fasam.projetoexemplo.entidades;
 import java.util.ArrayList;
 import java.util.List;
 
-/** 
+/**
  *
  * @author Aluno
  */
