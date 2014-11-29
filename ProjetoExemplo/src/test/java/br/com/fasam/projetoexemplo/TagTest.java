@@ -11,9 +11,9 @@ import br.fasam.projetoexemplo.entidades.Tag;
  *
  * @author Aluno
  */
-public class TagTeste extends TestCase {
+public class TagTest extends TestCase {
     
-    public TagTeste(String testName) {
+    public TagTest(String testName) {
         super(testName);
     }
     

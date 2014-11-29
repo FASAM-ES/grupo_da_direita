@@ -12,9 +12,9 @@ import junit.framework.TestCase;
  *
  * @author Aluno
  */
-public class ArtigoTeste extends TestCase {
+public class ArtigoTest extends TestCase {
     
-    public ArtigoTeste(String testName) {
+    public ArtigoTest(String testName) {
         super(testName);
     }
     
