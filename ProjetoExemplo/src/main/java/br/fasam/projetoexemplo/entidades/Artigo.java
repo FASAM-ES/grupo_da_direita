@@ -4,28 +4,59 @@
  */
 package br.fasam.projetoexemplo.entidades;
 
+import java.util.List;
+
 /**
  *
  * @author Aluno
  */
 public class Artigo {
     
-    private String Titulo;
-    private String Descricao;
+    String titulo;
+    String descricao;
+    Usuario usuario;
+    List<Comentario> comentarios;
+    List<Tag> tag;
 
     public String getTitulo() {
-        return Titulo;
+        return titulo;
     }
 
-    public void setTitulo(String Titulo) {
-        this.Titulo = Titulo;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
-    public void setDescricao(String Descricao) {
-        this.Descricao = Descricao;
-    } 
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
+    }
+
+    public List<Tag> getTag() {
+        return tag;
+    }
+
+    public void setTag(List<Tag> tag) {
+        this.tag = tag;
+    }
+
+    
 }
