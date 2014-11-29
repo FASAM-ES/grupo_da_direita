@@ -4,6 +4,7 @@
  */
 package br.fasam.projetoexemplo.entidades;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -58,5 +59,31 @@ public class Artigo {
         this.tag = tag;
     }
 
+    public void addComentario(Comentario comentario){
+        if(this.comentarios == null){
+            this.comentarios = new ArrayList<Comentario>();
+        }
+        
+        this.comentarios.add(comentario);
+    }
     
+    public void remComentario(Comentario comentario){
+        if(this.comentarios != null){
+            this.comentarios.remove(comentario);
+        }
+    }
+    
+    public void addTag(Tag tag){
+        if(this.tag == null){
+            this.tag = new ArrayList<Tag>();
+        }
+        
+        this.tag.add(tag);
+    }
+    
+    public void remTag(Tag tag){
+        if(this.tag != null){
+            this.tag.remove(tag);
+        }
+    }
 }
