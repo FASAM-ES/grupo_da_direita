@@ -19,6 +19,7 @@ public class Tag {
     
     public Artigo getArtigo(Integer i) {
         return artigos.get(i);
+        
     }
     
     public void addArtigo(Artigo artigo){
