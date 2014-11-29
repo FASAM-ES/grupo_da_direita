@@ -18,6 +18,10 @@ public class Artigo {
     Usuario usuario;
     List<Comentario> comentarios;
     List<Tag> tag;
+    
+    public Artigo(Usuario usuario){
+        this.usuario = usuario;
+    }
 
     public String getTitulo() {
         return titulo;
