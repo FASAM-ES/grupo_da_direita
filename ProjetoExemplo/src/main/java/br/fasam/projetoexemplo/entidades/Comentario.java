@@ -10,22 +10,42 @@ package br.fasam.projetoexemplo.entidades;
  * @author Aurélio
  */
 public class Comentario {
-    String Titulo;
+    String titulo;
+    String descricao;
+    Usuario usuario;
+    Artigo artigo;
 
     public String getTitulo() {
-        return Titulo;
+        return titulo;
     }
 
-    public void setTitulo(String Titulo) {
-        this.Titulo = Titulo;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
-    public void setDescricao(String Descricao) {
-        this.Descricao = Descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
-    String Descricao;
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public Artigo getArtigo() {
+        return artigo;
+    }
+
+    public void setArtigo(Artigo artigo) {
+        this.artigo = artigo;
+    }
+    
+    
 }

@@ -4,54 +4,77 @@
  */
 package br.fasam.projetoexemplo.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Aluno
  */
 public class Usuario {
-    String Nome;
-    String Email;
-    String Senha;
-    String Telefone;
-    String CPF;
-
+    String nome;
+    String email;
+    String senha;
+    String telefone;
+    String cpf;
+    List<Artigo> artigos;
+    
+    public Artigo getArtigo(Integer i) {
+        return artigos.get(i);
+    }
+    
+    public void addArtigo(Artigo artigo){
+        if (this.artigos==null)
+        {
+            this.artigos=new ArrayList<Artigo>();
+        }
+        this.artigos.add(artigo);
+    }
+    
+    public void remArtigo(Artigo artigo)
+    {
+        if (this.artigos !=null) {
+            this.artigos.remove(artigo);
+        }
+    }
+    
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public void setSenha(String Senha) {
-        this.Senha = Senha;
+        this.senha = Senha;
     }
 
     public String getTelefone() {
-        return Telefone;
+        return telefone;
     }
 
     public void setTelefone(String Telefone) {
-        this.Telefone = Telefone;
+        this.telefone = Telefone;
     }
 
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
 
     public void setCPF(String CPF) {
-        this.CPF = CPF;
+        this.cpf = CPF;
     }
 }

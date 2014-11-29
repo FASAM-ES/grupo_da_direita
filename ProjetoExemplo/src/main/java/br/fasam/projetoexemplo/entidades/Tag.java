@@ -4,28 +4,51 @@
  */
 package br.fasam.projetoexemplo.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Aluno
  */
 public class Tag {
-    private String Nome;
-    private String Descricao;
+    String nome;
+    String descricao;
+    List<Artigo> artigos;
+    
+    public Artigo getArtigo(Integer i) {
+        return artigos.get(i);
+    }
+    
+    public void addArtigo(Artigo artigo){
+        if (this.artigos==null)
+        {
+            this.artigos=new ArrayList<Artigo>();
+        }
+        this.artigos.add(artigo);
+    }
+    
+    public void remArtigo(Artigo artigo)
+    {
+        if (this.artigos !=null) {
+            this.artigos.remove(artigo);
+        }
+    }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String Nome) {
-        this.Nome = Nome;
+        this.nome = Nome;
     }
 
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
     public void setDescricao(String Descricao) {
-        this.Descricao = Descricao;
+        this.descricao = Descricao;
     }
     
 }
