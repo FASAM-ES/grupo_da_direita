@@ -5,6 +5,7 @@
 package br.com.fasam.projetoexemplo;
 
 import junit.framework.TestCase;
+import br.fasam.projetoexemplo.entidades.Tag;
 
 /**
  *
@@ -25,6 +26,17 @@ public class TagTeste extends TestCase {
     protected void tearDown() throws Exception {
         super.tearDown();
     }
-    // TODO add test methods here. The name must begin with 'test'. For example:
-    // public void testHello() {}
+    
+    public void testValidaNomeInformado(){
+        Tag t = new Tag("is the man!");
+        assertNotNull(t.getNome());
+    }
+    
+    public void testValidaDescricaoInformada() {
+        Tag t = new Tag("joffre", "desenvolvedor BI");
+        assertNotNull(t.getDescricao());
+    }
+    
+    
+    
 }

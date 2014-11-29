@@ -17,6 +17,17 @@ public class Tag {
     String descricao;
     List<Artigo> artigos;
     
+    public Tag(String _nome) {
+        this.nome = _nome;
+    }
+            
+    
+    public Tag(String _nome, String _descricao){
+        this.nome = _nome;
+        this.descricao = _descricao;
+    }
+            
+    
     public Artigo getArtigo(Integer i) {
         return artigos.get(i);
         
