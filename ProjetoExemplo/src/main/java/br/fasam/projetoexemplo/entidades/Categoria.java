@@ -15,6 +15,10 @@ public class Categoria {
     private String descricao;
     private List<Artigo> artigos;
 
+    public Categoria(String nome){
+        this.nome = nome;
+    }
+    
     /**
      * @return the nome
      */
