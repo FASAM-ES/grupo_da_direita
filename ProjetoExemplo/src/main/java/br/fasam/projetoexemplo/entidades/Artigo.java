@@ -12,6 +12,7 @@ public class Artigo {
     
     private String Titulo;
     private String Descricao;
+    
 
     public String getTitulo() {
         return Titulo;
