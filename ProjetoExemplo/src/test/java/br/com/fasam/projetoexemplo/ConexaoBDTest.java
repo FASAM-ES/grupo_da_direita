@@ -28,10 +28,10 @@ public class ConexaoBDTest extends TestCase {
     protected void tearDown() throws Exception {
         super.tearDown();
     }
-/*
+
     public void testConexao(){
         Connection con = ConexaoBD.getConexao();
-        assertNotNull(con);
+        //assertNotNull(con);
     }
-*/
+
 }

@@ -52,16 +52,16 @@ public class Tag {
         return nome;
     }
 
-    public void setNome(String Nome) {
-        this.nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String Descricao) {
-        this.descricao = Descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
     
 }
