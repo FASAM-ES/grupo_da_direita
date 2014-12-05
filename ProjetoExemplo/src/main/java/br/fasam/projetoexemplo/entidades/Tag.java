@@ -3,23 +3,19 @@ package br.fasam.projetoexemplo.entidades;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Aluno
- */
 public class Tag {   
     
     String nome;
     String descricao;
     List<Artigo> artigos;
     
-    public Tag(String _nome) {
-        this.nome = _nome;
+    public Tag(String nome) {
+        this.nome = nome;
     }
             
     
-    public Tag(String _nome, String descricao){
-        this.nome = _nome;
+    public Tag(String nome, String descricao){
+        this.nome = nome;
         this.descricao = descricao;
     }
             

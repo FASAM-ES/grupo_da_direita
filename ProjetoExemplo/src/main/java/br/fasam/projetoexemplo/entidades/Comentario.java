@@ -1,9 +1,5 @@
 package br.fasam.projetoexemplo.entidades;
 
-/**
- *
- * @author Aurélio
- */
 public class Comentario {
     String titulo;
     String descricao;
@@ -45,7 +41,5 @@ public class Comentario {
 
     public void setArtigo(Artigo artigo) {
         this.artigo = artigo;
-    }
-    
-    
+    } 
 }

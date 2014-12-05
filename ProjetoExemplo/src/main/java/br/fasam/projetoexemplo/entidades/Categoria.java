@@ -2,10 +2,6 @@ package br.fasam.projetoexemplo.entidades;
 
 import java.util.List;
 
-/**
- *
- * @author Aluno
- */
 public class Categoria {
     private String nome;
     private String descricao;

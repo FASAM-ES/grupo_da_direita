@@ -1,12 +1,7 @@
 package br.fasam.projetoexemplo.entidades;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-/**
- *
- * @author Aluno
- */
 public class Usuario {
     String nome;
     String email;
@@ -15,7 +10,7 @@ public class Usuario {
     String cpf;
     List<Artigo> artigos;
     
-    public Usuario(String nome,String email, String senha){
+    public Usuario(String nome,String email, String senha) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
@@ -25,16 +20,14 @@ public class Usuario {
         return artigos.get(i);
     }
     
-    public void addArtigo(Artigo artigo){
-        if (this.artigos==null)
-        {
+    public void addArtigo(Artigo artigo) {
+        if (this.artigos==null) {
             this.artigos=new ArrayList<Artigo>();
         }
         this.artigos.add(artigo);
     }
     
-    public void remArtigo(Artigo artigo)
-    {
+    public void remArtigo(Artigo artigo){
         if (this.artigos !=null) {
             this.artigos.remove(artigo);
         }
