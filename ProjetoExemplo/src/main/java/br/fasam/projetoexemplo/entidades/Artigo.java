@@ -1,16 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.fasam.projetoexemplo.entidades;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/** 
- *
- * @author Aluno
- */
 public class Artigo {
     
     String titulo;

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.fasam.projetoexemplo.entidades;
 
 import java.util.ArrayList;
@@ -64,23 +60,23 @@ public class Usuario {
         return senha;
     }
 
-    public void setSenha(String Senha) {
-        this.senha = Senha;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String Telefone) {
-        this.telefone = Telefone;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public String getCPF() {
         return cpf;
     }
 
-    public void setCPF(String CPF) {
-        this.cpf = CPF;
+    public void setCPF(String cpf) {
+        this.cpf = cpf;
     }
 }

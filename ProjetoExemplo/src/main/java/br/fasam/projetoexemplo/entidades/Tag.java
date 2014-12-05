@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.fasam.projetoexemplo.entidades;
 
 import java.util.ArrayList;
@@ -22,9 +18,9 @@ public class Tag {
     }
             
     
-    public Tag(String _nome, String _descricao){
+    public Tag(String _nome, String descricao){
         this.nome = _nome;
-        this.descricao = _descricao;
+        this.descricao = descricao;
     }
             
     
@@ -34,15 +30,13 @@ public class Tag {
     }
     
     public void addArtigo(Artigo artigo){
-        if (this.artigos==null)
-        {
+        if (this.artigos==null){
             this.artigos=new ArrayList<Artigo>();
         }
         this.artigos.add(artigo);
     }
     
-    public void remArtigo(Artigo artigo)
-    {
+    public void remArtigo(Artigo artigo) {
         if (this.artigos !=null) {
             this.artigos.remove(artigo);
         }

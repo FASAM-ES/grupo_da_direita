@@ -20,6 +20,9 @@ public class ConexaoBD {
     private static String usuario = "postgres";
     private static String senha = "fasam";
     
+    private ConexaoBD(){
+    }
+    
     public static Connection getConexao() {
         try {
             Class.forName(driver);
