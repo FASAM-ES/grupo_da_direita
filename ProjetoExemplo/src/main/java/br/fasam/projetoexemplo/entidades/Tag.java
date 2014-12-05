@@ -13,7 +13,6 @@ public class Tag {
         this.nome = nome;
     }
             
-    
     public Tag(String nome, String descricao){
         this.nome = nome;
         this.descricao = descricao;
