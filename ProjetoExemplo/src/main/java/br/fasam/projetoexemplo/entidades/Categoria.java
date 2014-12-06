@@ -39,16 +39,10 @@ public class Categoria {
         this.descricao = descricao;
     }
 
-    /**
-     * @return the artigos
-     */
     public List<Artigo> getArtigos() {
         return artigos;
     }
 
-    /**
-     * @param artigos the artigos to set
-     */
     public void setArtigos(List<Artigo> artigos) {
         this.artigos = artigos;
     }
